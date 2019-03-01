@@ -62,7 +62,7 @@ let cartas2 = [];
 
 let cartas3 = [];
 
-export default class Sueca extends Component {
+export default class Kings extends Component {
   state = {
     showing: 0,
     indiceShow: -1,
@@ -149,64 +149,18 @@ export default class Sueca extends Component {
     cartas2 = [];
   }
 
-  duvida() {
-    if (this.state.indiceShow === -1) {
-      console.log("tire uma carta");
-    } else {
-      if (cartas3[this.state.indiceShow].includes("A")) {
-        this.setState({ regra: "regra carta A" });
-      }
-      if (cartas3[this.state.indiceShow].includes("2")) {
-        this.setState({ regra: "regra carta 2" });
-      }
-      if (cartas3[this.state.indiceShow].includes("3")) {
-        this.setState({ regra: "regra carta 3" });
-      }
-      if (cartas3[this.state.indiceShow].includes("4")) {
-        this.setState({ regra: "regra carta 4" });
-      }
-      if (cartas3[this.state.indiceShow].includes("5")) {
-        this.setState({ regra: "regra carta 5" });
-      }
-      if (cartas3[this.state.indiceShow].includes("6")) {
-        this.setState({ regra: "regra carta 6" });
-      }
-      if (cartas3[this.state.indiceShow].includes("7")) {
-        this.setState({ regra: "regra carta 7" });
-      }
-      if (cartas3[this.state.indiceShow].includes("8")) {
-        this.setState({ regra: "regra carta 8" });
-      }
-      if (cartas3[this.state.indiceShow].includes("9")) {
-        this.setState({ regra: "regra carta 9" });
-      }
-      if (cartas3[this.state.indiceShow].includes("10")) {
-        this.setState({ regra: "regra carta 10" });
-      }
-      if (cartas3[this.state.indiceShow].includes("J")) {
-        this.setState({ regra: "regra carta J" });
-      }
-      if (cartas3[this.state.indiceShow].includes("Q")) {
-        this.setState({ regra: "regra carta Q" });
-      }
-      if (cartas3[this.state.indiceShow].includes("K")) {
-        this.setState({ regra: "regra carta K" });
-      }
-    }
-  }
-
   render() {
     return (
       <View style={styles.container}>
         <View style={styles.head}>
-          <Text style={styles.title}>Sueca</Text>
-          <TouchableOpacity
+          <Text style={styles.title}>King's Cup</Text>
+          {/* <TouchableOpacity
             onPress={() => {
               this.duvida();
             }}
           >
             <Image style={styles.icon} source={icon} />
-          </TouchableOpacity>
+          </TouchableOpacity> */}
         </View>
 
         <TouchableOpacity
