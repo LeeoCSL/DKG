@@ -13,7 +13,9 @@ import Kings from "./UI/KingsCup/inicio";
 import KingsJogar from "./UI/KingsCup/jogando";
 import KingsRegras from "./UI/KingsCup/regras";
 import KingsRegra from "./UI/KingsCup/regra";
-import Serio from "./UI/Serio";
+import Serio from "./UI/Serio/inicio";
+import SerioJogando from "./UI/Serio/jogando";
+import SerioComoFunciona from "./UI/Serio/comoFunciona";
 
 const Routes = createAppContainer(
   createStackNavigator({
@@ -26,7 +28,9 @@ const Routes = createAppContainer(
     KingsJogar,
     KingsRegras,
     KingsRegra,
-    Serio
+    Serio,
+    SerioJogando,
+    SerioComoFunciona
   })
 );
 
